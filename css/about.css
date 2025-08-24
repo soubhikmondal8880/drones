@@ -300,7 +300,6 @@ header {
     text-align: center;
   }
 }
-
 /* mission section */
 .mission-section {
   background: #F5F3FF;
@@ -312,11 +311,13 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
 }
 
 /* left text */
 .mission-text {
-  width: 55%;
+  flex: 1 1 45%;
+  min-width: 280px;
 }
 
 .mission-text h2 {
@@ -332,18 +333,23 @@ header {
 
 /* grid right */
 .mission-grid {
-  width: 45%;
+  flex: 1 1 45%;
+  min-width: 280px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
+/* grid item */
 .grid-item {
   height: 160px;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
   position: relative;
+  /* 👇 keep fixed size, no resizing */
+  min-width: 160px;
+  min-height: 160px;
 }
 
 /* first image */
@@ -358,8 +364,7 @@ header {
 
 /* stat cards */
 .stat1 {
-  background-image:
-    url("../images/about/rectangle.png");
+  background-image: url("../images/about/rectangle.png");
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -369,13 +374,11 @@ header {
 
 .stat2 {
   background-image: url("../images/about/circle.png");
-  background-size: cover;
+  background-size: 76%; /* fixed scaling */
+  background-repeat: no-repeat;
   background-position: center;
   height: 230px;
   width: 220px;
-  background-size: 76%;
-  background-repeat: no-repeat;
-  bottom: 12%;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -393,17 +396,28 @@ header {
   margin-top: 5px;
 }
 
-/* mobile */
-@media(max-width:768px) {
+/* Responsive */
+@media(max-width: 1024px) {
   .mission-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .mission-text,
   .mission-grid {
     width: 100%;
+    max-width: 600px;
+  }
+
+  .mission-text h2 {
+    text-align: center;
+  }
+
+  .mission-text p {
+    text-align: center;
   }
 }
+
 
 /* team */
 
