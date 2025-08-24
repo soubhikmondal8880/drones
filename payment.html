@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="./css/payment.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/brands.min.css"
+    integrity="sha512-mXqwRsOznG7CS37KA7CLR1Fc72gfOgp7r8xaVdBKoBKhitcKI/mK+IamtZUf+FAkufXOvVTESu9lPsoQc+kFxg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css"
+    integrity="sha512-J2Gce+WmOttffHOrVKLTlzxIalPXUMDbSfn5ADqp8Vj9EngnjNHr+jjiL3ZB8muEzo+K51gU10X+0eGqGNL7QA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/regular.min.css"
+    integrity="sha512-wwQ/gaGbUFM5xDtqajxQCwISzM1GWLK1T3Ml4ZIIrQ3AciO7bDi9eRynkzdpXwiwGBmdpCgZqfVYeZu5UjVeCw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/solid.min.css"
+    integrity="sha512-SRwBRtvmT+LZLST1GBrRec8GROqtjKU1NK23RKSpdL6IRzn2xPeOfBYSeIlc/9iXYagKB5IX6MyKZF1nq4a1fw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="./images/home/homelogo.png" alt="Drone Fly Logo">
+    </a>
+    <nav class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./service.html">Services</a>
+      <a href="./drone.html">Drones</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="auth-section">
+      <a href="#" class="login-btn">Log in</a>
+      <div class="images">
+        <img src="./images/checkout/profile.png" alt="">
+      </div>
+    </div>
+    <!-- Toggle Button -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <main>
+
+    <div class="payment-container">
+      <div class="payment-form">
+        <h2>Payment Method</h2>
+        <div class="payment-option selected">
+          <input type="radio" id="credit-card" name="payment-method" checked>
+          <label for="credit-card">Credit / Debit / ATM Card</label>
+        </div>
+        <div class="payment-details">
+          <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="Enter card number" required>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label>Expiry Date</label>
+              <input type="text" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+              <label>CVV</label>
+              <input type="text" placeholder="CVV" required>
+            </div>
+          </div>
+        </div>
+        <div class="payment-option">
+          <input type="radio" id="net-banking" name="payment-method">
+          <label for="net-banking">Net Banking</label>
+        </div>
+        <div class="payment-option">
+          <input type="radio" id="upi" name="payment-method">
+          <label for="upi">UPI</label>
+        </div>
+
+        <div class="payment-option">
+          <input type="radio" id="cod" name="payment-method">
+          <label for="cod">Cash on Delivery (COD)</label>
+        </div>
+        <a href="./confirmation.html">
+          <button class="btn">Pay Now</button>
+        </a>
+
+      </div>
+      <div class="price-summary">
+        <h3>Price Details</h3>
+        <div class="price-item">
+          <span>Price (1 item)</span>
+          <span>$2000</span>
+        </div>
+        <div class="price-item">
+          <span>Discount</span>
+          <span class="discount">-$400</span>
+        </div>
+        <div class="price-item">
+          <span>Delivery Charges</span>
+          <span class="free">Free</span>
+        </div>
+        <div class="price-item total">
+          <span>Total Amount</span>
+          <span>$1600</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Drone Fly</h3>
+        <p>Professional drone services for photography, videography, and inspections. Serving clients nationwide.</p>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone-volume"></i> (206) 123-4567</li>
+          <li><i class="fa-solid fa-envelope-circle-check"></i> info@dronefly.com</li>
+          <li><i class="fa-solid fa-map-pin"></i> 123 Drone Street, Skyview, CA 98210</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Aerial Photography</a></li>
+          <li><a href="#">Video Production</a></li>
+          <li><a href="#">Real Estate Tours</a></li>
+          <li><a href="#">Event Coverage</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter to receive the latest updates and promotions.</p>
+        <form>
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2024 DroneFly Drone Services. All rights reserved</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>

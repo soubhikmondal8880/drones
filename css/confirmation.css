@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.confirmation-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.confirmation-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.check-icon {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.check-icon::before {
+    content: '';
+    width: 40px;
+    height: 20px;
+    border-left: 5px solid #4deb1d;
+    border-bottom: 5px solid#4deb1d;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.check-icon .spikes {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: #4caf50;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+.check-icon .spike1 {
+    transform: rotate(0deg) translateY(-50px);
+}
+
+.check-icon .spike2 {
+    transform: rotate(30deg) translateY(-50px);
+}
+
+.check-icon .spike3 {
+    transform: rotate(60deg) translateY(-50px);
+}
+
+.check-icon .spike4 {
+    transform: rotate(90deg) translateY(-50px);
+}
+
+.check-icon .spike5 {
+    transform: rotate(120deg) translateY(-50px);
+}
+
+.check-icon .spike6 {
+    transform: rotate(150deg) translateY(-50px);
+}
+
+.check-icon .spike7 {
+    transform: rotate(180deg) translateY(-50px);
+}
+
+.check-icon .spike8 {
+    transform: rotate(210deg) translateY(-50px);
+}
+
+.check-icon .spike9 {
+    transform: rotate(240deg) translateY(-50px);
+}
+
+.check-icon .spike10 {
+    transform: rotate(270deg) translateY(-50px);
+}
+
+.check-icon .spike11 {
+    transform: rotate(300deg) translateY(-50px);
+}
+
+.check-icon .spike12 {
+    transform: rotate(330deg) translateY(-50px);
+}
+
+
+.confirmation-container p {
+    padding: 28px;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.track-button {
+    background-color: #cec2a5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.track-button:hover {
+    background-color: #c4bba2;
+}
+
+@media (max-width: 480px) {
+    .confirmation-container {
+        padding: 20px;
+    }
+
+    .confirmation-container h1 {
+        font-size: 20px;
+    }
+}

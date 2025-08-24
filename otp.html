@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTP Verification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/otp.css">
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./images/logo/logo.png" alt="Drone Fly">
+        <h2>Drone Fly</h2>
+      </div>
+
+      <!-- OTP form -->
+      <form id="otpForm">
+        <h3 class="title">OTP Verification</h3>
+        <p class="hint">Please enter the code we just sent to email</p>
+        <p class="email" id="userEmail">john.doe@email.com</p>
+
+        <div class="otp">
+          <input type="text" inputmode="numeric" maxlength="1" class="box" />
+          <input type="text" inputmode="numeric" maxlength="1" class="box" />
+          <input type="text" inputmode="numeric" maxlength="1" class="box" />
+          <input type="text" inputmode="numeric" maxlength="1" class="box" />
+        </div>
+        <small id="otpError" class="error"></small>
+
+        <p class="resend">
+          Didn’t receive OTP ? <a href="#" id="resendOtp">Resend code</a>
+        </p>
+
+        <a href="newPassword.html" id="verifyOtp" class="btn" aria-disabled="true">Verify</a>
+        <div id="successMessage" class="success" style="display:none;"></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/otp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url('../images/signup/signup.png') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* ------------------------------
+   Header & Navigation
+------------------------------ */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  color: #a4f20d;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a4f20d;
+}
+
+/* ------------------------------
+   Main Container
+------------------------------ */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 440px;
+  max-width: 90%;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #a4f20d;
+  margin-bottom: 20px;
+}
+
+/* ------------------------------
+   Form Elements
+------------------------------ */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #e6e6e6;
+  margin: 10px 0;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+.checkbox a {
+  color: #a4f20d;
+  text-decoration: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #a4f20d;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #8bc70c;
+}
+
+/* Login link */
+.login {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login a {
+  color: #a4f20d;
+  text-decoration: none;
+}
+
+/* ------------------------------
+   Password Field with Eye Icon
+------------------------------ */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  /* space for eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #352b2b;
+  transition: 0.3s;
+}
+
+
+
+/* Error message under inputs */
+.error-message {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+  /* hidden by default */
+}
+
+.success-message {
+  color: #394e3e;
+  /* green */
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+@media (max-width: 500px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}
