@@ -31,4 +31,4 @@ DronePages is a responsive and modern frontend project designed to showcase dron
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 </p>
-"# drone" 
+
